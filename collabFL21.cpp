@@ -21,7 +21,7 @@ string semester = "Fall 2021";
 
 void showMenu();
 void menu18Smiley(int);
-
+void menu8Cutshall(int);
 // ***************************************************************
 // END OF FUNCTION PROTOTYPE AREA
 // ***************************************************************
@@ -39,55 +39,63 @@ int main()
     {
         // Display the menu and get the user's choice.
         showMenu();
-        cout << "Enter your selection (0 to exit): ";
-        cin >> choice;
+        std::cout << "Enter your selection (0 to exit): ";
+        std::cin >> choice;
 
         // Validate the menu selection.
         if (choice == EXIT)
         {
-            cout << endl;
-            cout << "Thank for using the " << semester << " Menu Program. " << endl;
-            cout << "Have a nice day." << endl;
+           std:: cout << std::endl;
+            std::cout << "Thank for using the semester Menu Program. " << std::endl;
+            std::cout << "Have a nice day." << std::endl;
         }
         else
         {
             switch (choice)
             {
             case 1:                 // Akopov - call to function goes here
+            cout << "Hello World!\n";
                 break;
-            case 2:                 // Belakhoua - call to function goes here
+            case 2:            
+            cout << "Hello World!\n";// Belakhoua - call to function goes here
                 break;
-            case 3:                 // Birge - call to function goes here
+            case 3:                 
+            cout << "Hello World!\n";// Birge - call to function goes here
                 break;
-            case 4:                 // Carpenter - call to function goes here
+            case 4:                 
+            cout << "Hello World!\n";// Carpenter - call to function goes here
                 break;
-            case 5:                 // Cervantes - call to function goes here
+            case 5:                 
+            cout << "Hello World!\n";// Cervantes - call to function goes here
                 break;
-            case 6:                 // Chairez - call to function goes here
+            case 6:                 
+            cout << "Hello World!\n";// Chairez - call to function goes here
                 break;
-            case 7:                 // Coons - call to function goes here
+            case 7:                 
+            cout << "Hello World!\n";// Coons - call to function goes here
                 break;
             case 8:                 // Cutshall - call to function goes here
-				break;
-            case 9:                 // Gilcrease - call to function goes here
+            menu8Cutshall(8);
                 break;
-            case 10:                 // Kaiser - call to function goes here
+            case 9:                cout << "Hello World!\n"; // Gilcrease - call to function goes here
                 break;
-            case 11:                 // Mukendi - call to function goes here
+            case 10:                cout << "Hello World!\n"; // Kaiser - call to function goes here
                 break;
-            case 12:                 // Naz - call to function goes here
+            case 11:                cout << "Hello World!\n"; // Mukendi - call to function goes here
                 break;
-            case 13:                 // Ricks - call to function goes here
+            case 12:               cout << "Hello World!\n";  // Naz - call to function goes here
                 break;
-            case 14:                 // Rodriguez - call to function goes here
+            case 13:               cout << "Hello World!\n";  // Ricks - call to function goes here
                 break;
-            case 15:                 // Syed - call to function goes here
+            case 14:               cout << "Hello World!\n";  // Rodriguez - call to function goes here
                 break;
-            case 16:                 // Underwood - call to function goes here
+            case 15:                cout << "Hello World!\n"; // Syed - call to function goes here
                 break;
-            case 17:                 // Whispell - call to function goes here
+            case 16:                cout << "Hello World!\n"; // Underwood - call to function goes here
                 break;
-            case 18:                 // Smiley - call to function goes here
+            case 17:                cout << "Hello World!\n"; // Whispell - call to function goes here
+                break;
+            case 18:                // Smiley - call to function goes here
                 menu18Smiley(11);
                 break;
             }
@@ -100,7 +108,23 @@ int main()
 //*****************************************************************
 // Definition of function showMenu which displays the menu.       *
 //*****************************************************************
+void menu8Cutshall(int numot)
+{
+          int options;
+            std::cout << "Hello I'm Function 8 other wise known as function Cutshall\n" << " How are you doing today?\n";
+            std::cout << "1: Great\n" << "2: Fine\n" << "3: Not Good :(\n";
+            std::cin >> options;
+            if (options == 1){
+                std::cout << "I'm glad that you are having a great day. I wish nothing but the best for you today. You are loved!\n";
+            } else if (options == 2){
+                std::cout << "I hope you find more joy as the day goes on, have a lovely rest of your day\n";
+            } else if (options == 3){
+                std::cout << "I'm so sorry that you're not feeling good today, remember you are loved and you MATTER. Remember sadness is like a storm, it's only here for a little while and things always clear up :)\n";
+            } else if ( options > 1 || options < 3){
+                std::cout << "invalid answer sorry!";
+            }
 
+}
 void showMenu()
 {
     cout << "*******************************************************************" << endl;
